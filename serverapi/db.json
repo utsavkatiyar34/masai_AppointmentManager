@@ -1,0 +1,22 @@
+{
+   "users":[
+        {
+                "id":"1",
+                "username":"testuser1",
+                "password":"test1@123"
+        },
+        {
+                "id":"2",
+                "username":"testuser2",
+                "password":"test2@123"
+        },
+        {
+                "id":"3",
+                "username":"testuser3",
+                "password":"test3@123"
+        }
+   ]  ,
+   "appointments" :[
+        
+   ] 
+}
