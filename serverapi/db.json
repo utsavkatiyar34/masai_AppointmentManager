@@ -1,22 +1,57 @@
 {
-   "users":[
-        {
-                "id":"1",
-                "username":"testuser1",
-                "password":"test1@123"
-        },
-        {
-                "id":"2",
-                "username":"testuser2",
-                "password":"test2@123"
-        },
-        {
-                "id":"3",
-                "username":"testuser3",
-                "password":"test3@123"
-        }
-   ]  ,
-   "appointments" :[
-        
-   ] 
+  "users": [
+    {
+      "id": "1",
+      "username": "testuser1",
+      "password": "test1@123"
+    },
+    {
+      "id": "2",
+      "username": "testuser2",
+      "password": "test2@123"
+    },
+    {
+      "id": "3",
+      "username": "testuser3",
+      "password": "test3@123"
+    }
+  ],
+  "appointments": [
+    {
+      "name": "utsav ",
+      "age": "22",
+      "gender": "Male",
+      "details": "Nan",
+      "time": "",
+      "date": "",
+      "id": 1
+    },
+    {
+      "name": "utsav ",
+      "age": "22",
+      "gender": "Male",
+      "details": "Nan",
+      "time": "",
+      "date": "",
+      "id": 2
+    },
+    {
+      "name": "Lokendra",
+      "age": "24",
+      "gender": "Male",
+      "details": "Village",
+      "time": "15:20",
+      "date": "2022-07-20",
+      "id": 3
+    },
+    {
+      "name": "chanchal",
+      "age": "21",
+      "gender": "female",
+      "details": "Village",
+      "time": "15:20",
+      "date": "2022-07-20",
+      "id": 4
+    }
+  ]
 }
