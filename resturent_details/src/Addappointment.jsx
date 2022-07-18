@@ -4,11 +4,8 @@ import axios from "axios";
 import { v4 } from "uuid";
 
 export default function Addappointment() {
-  // const [click, setClick]=useState(0);
-  // let handleClick=()=>{
-  //         setClick(1);
-  // }
   const [data, setData] = useState({
+    id: v4(),
     name: "",
     age: "",
     gender: "",

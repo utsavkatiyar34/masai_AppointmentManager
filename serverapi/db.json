@@ -14,6 +14,12 @@
       "id": "3",
       "username": "testuser3",
       "password": "test3@123"
+    },
+    {
+      "id": "baa895be-08a2-4eb4-b65b-cdd18166cd13",
+      "name": "utsav ",
+      "email": "utsavkatiyar34@gmail.com",
+      "PassWord": "Utsavfsgd"
     }
   ],
   "appointments": [
@@ -52,6 +58,15 @@
       "time": "15:20",
       "date": "2022-07-20",
       "id": 4
+    },
+    {
+      "id": "3f16d7ba-77d1-4cc3-b0e7-33f8a8d9b090",
+      "name": "Rohan",
+      "age": "28",
+      "gender": "Male",
+      "details": "Classes",
+      "time": "",
+      "date": ""
     }
   ]
 }
