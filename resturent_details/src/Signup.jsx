@@ -19,6 +19,9 @@ export default function Addappointment() {
     axios.post('http://localhost:3006/users', {...userdata})
     .then(function (response){
         console.log(response);
+        if(response.status==201){
+          alert("Signup Successful");
+        }
     })
     .catch(function(error){
         console.log(error);
@@ -44,7 +47,7 @@ export default function Addappointment() {
         name="PassWord"
         onChange={handleInput}
         value={userdata.PassWord}
-        type="text"
+        type="password"
         placeholder="Enter Password"
       ></input>
       <button onClick={handleClick}>Signup</button>

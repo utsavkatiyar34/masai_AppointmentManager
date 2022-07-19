@@ -1,5 +1,5 @@
 .card-div{
-        margin-top: 5vw;
+        margin-top: 2.5vw;
         display: flex;
         overflow: auto;
         flex-direction: column;
@@ -8,4 +8,8 @@
         margin-left: auto;
         margin-right: auto;
         border: 2px solid rgb(5, 135, 187);
+        text-align: center;
+        font-family: Arial, sans-serif;
+        font-size: 2vw;
+        color:rgb(5, 135, 187);
 }

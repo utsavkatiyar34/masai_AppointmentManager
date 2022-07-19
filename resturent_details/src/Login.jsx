@@ -3,23 +3,38 @@ import React, { useState, useEffect } from "react";
 import "./signup.css";
 import axios from "axios";
 import { v4 } from "uuid";
-
+let login=false;
+let username="";
 export default function Addappointment() {
-  const [userdata, setUserData] = useState({
-    id: v4(),
-    name: "",
+  const [userData, setUserData] = useState({
     email: "",
     PassWord: "",
   });
   let handleInput = (val) => {
     const key = val.target.name;
     const value = val.target.value;
-    setUserData({ ...userdata, [key]: value });
+    setUserData({ ...userData, [key]: value });
   };
   let handleClick = () => {
-    axios.post('http://localhost:3006/users', {...userdata})
+    let email=userData.email;
+    let pass=userData.PassWord;
+    axios.get(`http://localhost:3006/users?email=${email}&PassWord=${pass}`)
     .then(function (response){
-        console.log(response);
+        let para=response.data;
+        if(para.length===1){
+          login=true;
+          username=para[0].name;
+          alert("Login Successful");
+          
+           window.location.href="/";
+        }
+        else if(para.length===0){
+          alert("Register User First");
+          window.location.href="/signup";
+        }
+        else if(para.length>1){
+          alert("Worng Email or Password");
+        }
     })
     .catch(function(error){
         console.log(error);
@@ -30,15 +45,15 @@ export default function Addappointment() {
       <input
         name="email"
         onChange={handleInput}
-        value={userdata.email}
+        value={userData.email}
         type="text"
         placeholder="Enter Email"
       ></input>
       <input
         name="PassWord"
         onChange={handleInput}
-        value={userdata.PassWord}
-        type="text"
+        value={userData.PassWord}
+        type="password"
         placeholder="Enter Password"
       ></input>
       <button onClick={handleClick}>Login</button>
